@@ -75,7 +75,7 @@ public class Main {
         result = returnString(12);
         System.out.println(result);
 
-        int sum = calculate(12, 10);
+        int sum = calculate(2, 10);
         System.out.println(sum);
 
     }
