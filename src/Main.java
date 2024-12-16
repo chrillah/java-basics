@@ -19,6 +19,8 @@ public class Main {
         double storNummer1 = 10.5;
         int litenNummer2 = (int) storNummer; // Du "tvingar" Java att trimma ner
         System.out.println(litenNummer2);
+
+
 /// ///////////////////////////////////////////////
         // Primitiva datatyper
         // byte
@@ -93,7 +95,7 @@ public class Main {
         intArray[1] = 2;
         intArray[2] = 3;
 
-        // Java Library, Arrays
+        // Java Standard Library: Arrays
         // Arrays.toString
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
@@ -114,6 +116,15 @@ public class Main {
 
         // Skriver ut den sorterade arrayen
         System.out.println("Sorterade: " + Arrays.toString(unsortedNumbers));
+
+        //Arrays.equals
+        // boolean equals(int[] 1, int[] b)
+
+        char[] arr1 = {'F', 'U', 'C', 'K'};
+        char[] arr2 = {'f', 'u', 'c', 'k'};
+
+        System.out.println(Arrays.equals(arr1, arr2));
+
 
     }
 
