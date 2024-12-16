@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Basic Java
@@ -77,6 +79,41 @@ public class Main {
 
         int sum = calculate(12, 10);
         System.out.println(sum);
+
+
+        // Arrayer
+        // syntax
+
+        // deklarera
+        int[] intArray;
+        intArray = new int[3];
+
+        // tilldela
+        intArray[0] = 1;
+        intArray[1] = 2;
+        intArray[2] = 3;
+
+        // Java Library, Arrays
+        // Arrays.toString
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numbers));
+
+        String[] names = {"Malin","Linda"};
+        System.out.println(names);
+
+        System.out.println(Arrays.toString(names));
+
+        // Arrays.sort
+        int[] unsortedNumbers = {6, 2, 4, 56, 7, 23, 9, 100, 1};
+
+        // Skriver ut den osorterade arrayen
+        System.out.println("Osorterade: " + Arrays.toString(unsortedNumbers));
+
+        // Sorterar arrayen
+        Arrays.sort(unsortedNumbers);
+
+        // Skriver ut den sorterade arrayen
+        System.out.println("Sorterade: " + Arrays.toString(unsortedNumbers));
 
     }
 
