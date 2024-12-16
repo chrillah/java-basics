@@ -75,6 +75,9 @@ public class Main {
         result = returnString(12);
         System.out.println(result);
 
+        int sum = calculate(12, 10);
+        System.out.println(sum);
+
     }
 
     // Metoder
@@ -97,5 +100,9 @@ public class Main {
         }
 
         return result;
+    }
+
+    static int calculate(int a, int b){
+        return a+b;
     }
 }
