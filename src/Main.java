@@ -156,6 +156,7 @@ public class Main {
 
         // while / do while
 
+        /*
         int choice = 0;
         Scanner menu = new Scanner(System.in);
 
@@ -182,8 +183,15 @@ public class Main {
 
 
         } while(choice != 3);
+         */
 
 
+        AnotherClass.methodFromThisClass();
+
+        System.out.println(AnotherClass.testHest());
+
+        System.out.println(AnotherClass.msg(12));
+        System.out.println(AnotherClass.msg(19));
 
     }
 
