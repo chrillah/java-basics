@@ -1,4 +1,7 @@
 import java.util.Arrays;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -124,6 +127,62 @@ public class Main {
         char[] arr2 = {'f', 'u', 'c', 'k'};
 
         System.out.println(Arrays.equals(arr1, arr2));
+
+        // Control flows
+        // if(condition) / else if / else
+        // switch / case
+        // NYARE / switch, case enhanced
+        int i1 = 0;
+        switch(i1){
+            case 0 -> System.out.println("0");
+            case 1 -> System.out.println("1");
+            default -> System.out.println("3");
+        }
+
+        // for-loop
+        // for-each
+        // for(type element : collection) { loop body}
+        int[] exampleArrayNumbers = {1,3,4,5,6,3,2,4,6,7,8};
+        for(int number : exampleArrayNumbers){
+            System.out.println(number);
+        }
+
+        /*
+        List<String> drinks = new ArrayList<>();
+        drinks.add("cola");
+        drinks.add("pepsi");
+        */
+
+
+        // while / do while
+
+        int choice = 0;
+        Scanner menu = new Scanner(System.in);
+
+        do{
+            try {
+                choice = 0;
+                System.out.println("MENU BITCH");
+                System.out.println("1) Option 1");
+                System.out.println("2) Option 2");
+                System.out.println("3) Exit 3");
+                System.out.println("Enter your choice bitch");
+                choice = menu.nextInt();
+
+                switch(choice){
+                    case 1 -> System.out.println("Choice 1");
+                    case 2 -> System.out.println("Choice 2");
+                    case 3 -> System.out.println("Exiting bitch");
+                    default -> System.out.println("Invalid choice bitch try again");
+                }
+            } catch(InputMismatchException e){
+                System.out.println("No po, otra vez");
+                menu.nextLine();
+            }
+
+
+        } while(choice != 3);
+
 
 
     }
