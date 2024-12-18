@@ -193,6 +193,9 @@ public class Main {
         System.out.println(AnotherClass.msg(12));
         System.out.println(AnotherClass.msg(19));
 
+
+        // Wends 18/ 12 - Exceptions
+
     }
 
     // Metoder
